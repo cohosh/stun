@@ -76,7 +76,8 @@ const (
 
 // Attributes from RFC 5780 NAT Behaviour Discovery
 const (
-	AttrOtherAddress AttrType = 0x802C //OTHER-ADDRESS
+	AttrOtherAddress  AttrType = 0x802C //OTHER-ADDRESS
+	AttrChangeRequest AttrType = 0x0003 //CHANGE-REQUEST
 )
 
 // Attributes from RFC 6062 TURN Extensions for TCP Allocations.
@@ -111,6 +112,7 @@ var attrNames = map[AttrType]string{
 	AttrSoftware:               "SOFTWARE",
 	AttrAlternateServer:        "ALTERNATE-SERVER",
 	AttrOtherAddress:           "OTHER-ADDRESS",
+	AttrChangeRequest:          "CHANGE-REQUEST",
 	AttrFingerprint:            "FINGERPRINT",
 	AttrPriority:               "PRIORITY",
 	AttrUseCandidate:           "USE-CANDIDATE",
