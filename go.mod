@@ -1,3 +1,3 @@
-module github.com/pion/stun
+module github.com/cohosh/stun
 
 go 1.12
